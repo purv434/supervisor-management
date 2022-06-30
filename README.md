@@ -33,6 +33,7 @@ Supervisor management is a spring boot  and react js based web application. In t
     - [Git Installation](https://www.atlassian.com/git/tutorials/install-git#:~:text=Install%20Git%20on%20Windows,-Git%20for%20Windows&text=Download%20the%20latest%20Git%20for%20Windows%20installer.,prompts%20to%20complete%20the%20installation. "Git Installation")
     - git clone with this command : [git clone https://github.com/purv434/supervisor-management.git]
 - Open terminal or cmd then after go to supervisor-managment directory.
+- first create the build using this command: [mvn clean install]
 - Make docker build for backend using this command : [docker build -t supervisor-management .]
 - Same thing go to supervisor-management-ui directory.
 - Make docker build for UI using this command : [docker build -t supervisor-ui .]
