@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  supervisor-backend:
+    image: supervisor-management
+    restart: unless-stopped
+    container_name: supervisor-backend
+    ports:
+        - "8181:8181"
+  supervisor-ui:
+    image: supervisor-ui
+    restart: unless-stopped
+    container_name: supervisor-ui
+    ports:
+        - "3000:3000"
+    depends_on:
+      - supervisor-backend
