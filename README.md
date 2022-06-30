@@ -2,7 +2,9 @@
 
 Supervisor management is a spring boot  and react js based web application. In this application manager or admine can send the notification to particular supervisor and this is a one page appliation.
 
-## For easy way to running this application we need to install docker in our system. 
+## For easy way to running this application we need to install docker in our system.
+[docker install in windows reference](https://docs.docker.com/desktop/windows/install/ "docker install reference")
+[docker install in linux reference](https://docs.docker.com/desktop/linux/install/ "docker install reference")
 
 ## Backend : 
         - Spring boot app with latest spring version 2.7.1 and jdk version 1.8.
@@ -25,11 +27,13 @@ Supervisor management is a spring boot  and react js based web application. In t
         - For UI create Docker image [docker build -t supervisor-ui .]
 
 
-## Below step follow and run application.
+## Below step follow and run application with docker.
 
 - Clone project using git command.
-- Go to supervisor-managment directory and open terminal or cmd.
-- Make docker build using this command : docker build -t supervisor-management .
-- Same thing go to supervisor-management-ui directory and open terminal or cmd.
-- Make docker build using this command : docker build -t supervisor-ui .
-- Then after go to main directory which is present in  docker-compose.yml file and open terminal and write command - [ docker-compose up ]
+    - [Git Installation](https://www.atlassian.com/git/tutorials/install-git#:~:text=Install%20Git%20on%20Windows,-Git%20for%20Windows&text=Download%20the%20latest%20Git%20for%20Windows%20installer.,prompts%20to%20complete%20the%20installation. "Git Installation")
+    - git clone with this command : [git clone https://github.com/purv434/supervisor-management.git]
+- Open terminal or cmd then after go to supervisor-managment directory.
+- Make docker build for backend using this command : [docker build -t supervisor-management .]
+- Same thing go to supervisor-management-ui directory.
+- Make docker build for UI using this command : [docker build -t supervisor-ui .]
+- Then after go to main directory which is present in  docker-compose.yml file and execute this command - [docker-compose up]
