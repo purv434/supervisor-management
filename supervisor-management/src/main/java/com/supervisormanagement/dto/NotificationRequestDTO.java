@@ -14,11 +14,11 @@ public class NotificationRequestDTO {
     private String email;
 
     @NotBlank(message = "firstName must be required!!")
-    @Pattern(regexp = "[a-zA-Z]*",message = "firstName only contain letter")
+    @Pattern(regexp = "[a-zA-Z\\s]*",message = "firstName only contain letter")
     private String firstName;
 
     @NotBlank(message = "lastName must be required!!")
-    @Pattern(regexp = "[a-zA-Z]*",message = "lastName only contain letter")
+    @Pattern(regexp = "[a-zA-Z\\s]*",message = "lastName only contain letter")
     private String lastName;
 
     @Override
